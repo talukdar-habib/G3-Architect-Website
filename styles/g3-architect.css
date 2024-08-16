@@ -13,6 +13,15 @@
     background-color: rgba(255, 144, 14, 0.1);
 }
 
+main > section {
+    margin-top: 120px;
+}
+
+.display-flex{
+    display: flex;
+}
+
+
 .btn-primary{
     color: white;
     background-color: #FF900E;
@@ -24,16 +33,17 @@
     margin-top: 32px;
     cursor: pointer;
 }
-
+/* Shared styles ends */
 
 /* Header section styles starts */
+
 /* Nav section styles starts */
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.brand-title{
+.nav-title{
     font-size: 3rem;
     font-weight: bold;
 }
@@ -51,18 +61,13 @@
     font-weight: 500;
     color: #424242;
 }
-.navbar{
-    max-width: 1440px;
-    margin: 0 auto;
-    
-}
 
 /* Banner section styles starts */
 
 .banner{
     max-width: 1440px;
     margin: 0 auto;
-    /* height: 1300px; */
+
 }
 .banner-content{
     max-width: 850px;
@@ -89,9 +94,63 @@
     margin: 0 auto;
 }
 
-.banner-image{
+.image-container img{
     width: 100%;
+    margin-bottom: 45px;
 }
+
+/* Banner section styles ends */
+
+/* Teams section styles starts */
+
+.teams{
+    align-items: center;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-features{
+    margin-left: 70px;
+    /* border: 1px solid red; */
+    width: 30%;
+}
+
+#quick-list{
+    font-weight: 500;
+    font-size: 2.8rem;
+    color: rgba(114, 114, 114, 1);
+}
+
+#of-our{
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: rgba(19, 19, 19, 1);
+}
+
+#features{
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: rgba(255, 144, 14, 1);
+}
+
+.feature-description{
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: rgba(114, 114, 114, 1);
+    margin-top: 15px;
+    /* border: 1px solid rosybrown; */
+    /* width: 110%; */
+}
+
+
+
+
+
+/* Teams section styles ends */
 
 
 /* Responsive media query for small devices */
@@ -99,6 +158,22 @@
     .navbar, .nav-links{
         flex-direction: column;
     }
-    
+    .nav-item{
+        /* line-height: 20px; */
+        padding-top: 20px;
+        
+    }
+    .banner-title{
+        font-size: 2.5rem;
+        padding-top: 10px;
+    }
+    .banner-description{
+        padding-top: 5px;
+    }
+
+    /* Teams section starts */
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
