@@ -263,6 +263,8 @@
 .sponsor-title{
     text-align: center;
     margin-top: 150px;
+    font-weight: bold;
+    font-size: 2.8rem;
 }
 
 .sponsor-description{
@@ -271,7 +273,19 @@
     text-align: center;
     margin-top: 20px;
     margin-bottom: 50px ;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(114, 114, 114, 1);
     
+}
+
+.sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sponsor-companies img{
+    filter: grayscale(100%);
 }
 
 /* Sponsor section styles ends */
@@ -324,6 +338,12 @@
         width: 100%;
         margin-bottom: 30px;
     }
+
+    .sponsor-companies{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 30px;
+    }
 }
 
 
@@ -337,6 +357,30 @@
     .our-features{
         margin: 50px auto;
         width: 70%;
+    }
+
+    .facts-container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 20px;
+        /* margin-right: 50px; */
+    }
+
+    .facts h3{
+        text-align: center;
+    }
+    .facts p {
+        /* border: 1px solid black; */
+        /* width: -20%; */
+        margin-left: 170px;
+        /* align-items: center;
+        /* text-align: center; */ 
+        /* justify-items: center; */
+    }
+
+    .sponsor-companies{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
 
 }
