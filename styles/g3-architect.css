@@ -195,6 +195,80 @@
 
 /* Features you will love & enjoy section styles starts */
 
+.features-love{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 130px;
+    display: flex;
+    gap: 85px;
+}
+
+.features-love h1{
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.features-love p{
+    /* width: 60%; */
+    font-weight: 400;
+    font-size: 0.87rem;
+    color: rgba(114, 114, 114, 1);
+    margin-top: 20px;
+}
+
+#features-title{
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 20px;
+}
+.feature-card{
+    /* border: 1px solid rebeccapurple; */
+    /* width: 80%; */
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.feature-card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    /* padding: 30px; */
+}
+
+.feature-card-description{
+    font-weight: 400;
+    font-size: 1rem;
+    /* padding-top: 10px; */
+    color: rgba(114, 114, 114, 1);
+}
+
+.feature-img-container{
+    width: 150%;
+}
+
+.feature-img-container img{
+    width: 100%;
+}
+
+#experience-badge{
+    padding: 55px 52px;
+    margin-left: -60px;
+    margin-top: -60px;
+}
+
+.experience-year{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.experience-description{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
 /* Features you will love & enjoy section styles ends */
 
 /* Some fact section styles starts */
@@ -290,7 +364,38 @@
 
 /* Sponsor section styles ends */
 
+/* Footer section styles starts */
+
+.footer{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 170px;
+    margin-bottom: 170px;
+}
+
+.footer p{
+    font-weight: 400;
+    font-size: 0.87rem;
+    color: rgba(66, 66, 66, 1);
+    text-align: center;
+    padding: 20px 270px 20px 270px;
+    background-color: rgba(255, 244, 231, 1);
+    border-radius: 8px;
+}
+
+
+/* Footer section styles ends */
+
+
+
+
+
+
+
+
+
 /* Responsive media query for small devices */
+
 @media screen and (max-width: 576px) {
     .navbar, .nav-links, .teams{
         flex-direction: column;
@@ -328,6 +433,30 @@
         width: 90%;
     }
 
+    /* Team section styles ends */
+
+
+    /* Features you will love & enjoy section starts */
+
+    .features-love{
+        flex-direction: column;
+    }
+    .feature-img-container img{
+        width: 60%;
+        justify-items: center;
+    }
+
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 40px 40px;
+        justify-items: center;
+    }
+
+    /* Features you will love & enjoy section ends */
+
+    /* Some facts section starts */
+
     .facts-container{
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
@@ -338,12 +467,29 @@
         width: 100%;
         margin-bottom: 30px;
     }
+    /* Some facts section ends */
 
+    /* Sponsor section starts */
     .sponsor-companies{
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
         gap: 30px;
     }
+    /* Sponsor section ends */
+
+
+    /* Footer section starts */
+
+    .footer{
+        width: 70%;
+    }
+    .footer p{
+        padding: 20px;
+        margin-top: 0px;
+    }
+
+
+    /* Footer section ends */
 }
 
 
