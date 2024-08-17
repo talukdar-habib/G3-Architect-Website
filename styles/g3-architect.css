@@ -505,10 +505,53 @@
         width: 70%;
     }
 
+    .features-love{
+        width: 60%;
+        flex-direction: column;
+    }
+
+    .feature-img-container{
+        border: 1px solid black;
+        position: relative;
+        width: 80%;
+    }
+
+    .feature-img-container img{
+        width: 100%;
+        justify-items: center;
+        /* margin-top: 100px; */
+        /* position: relative; */
+    }
+
+    #experience-badge{
+        width: 50%;
+        /* margin-top: 300px;
+        margin-left: -300px; */
+        padding: 20px 20px;
+        /* padding-top: 100px; */
+        /* justify-items: center; */
+        position: absolute;
+        /* top: 100%;
+        right: 60%; */
+        bottom: -50px;
+        right: 60%;
+        /* z-index: 1; */
+
+        border: 1px solid red;
+    }
+
+    .experience-year{
+        font-size: 2rem;
+    }
+
+
+
     .facts-container{
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
-        gap: 20px;
+        gap: 10px;
+        width: 60%;
+        /* border: 1px solid red; */
         /* margin-right: 50px; */
     }
 
@@ -527,6 +570,16 @@
     .sponsor-companies{
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+        margin-left: 50px;
+    }
+
+
+    .footer{
+        width: 60%;
+    }
+
+    .footer p{
+        padding: 20px;
     }
 
 }
